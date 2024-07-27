@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: check-added-large-files
         args: ["--maxkb=1024"]
@@ -14,7 +14,6 @@ repos:
       - id: check-executables-have-shebangs
       - id: check-merge-conflict
         args: ["--assume-in-merge"]
-      - id: requirements-txt-fixer
       - id: detect-private-key
       - id: pretty-format-json
         args: ["--autofix"]
@@ -29,6 +28,6 @@ repos:
       - id: markdownlint
         args: [-s, .markdownlint.rb]
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.18.0 # Specify the desired version of Gitleaks
+    rev: v8.18.4 # Specify the desired version of Gitleaks
     hooks:
       - id: gitleaks
