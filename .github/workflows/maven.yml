@@ -23,6 +23,7 @@ jobs:
       - name: Print cwd
         run: |
           echo $PWD
+          ls -la
       - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
