@@ -50,7 +50,7 @@ public class FileConfReader {
         Yaml yaml = new Yaml();
 
         Map<String, Object> configMap = null;
-        try (FileReader fr = new FileReader(confFilePath);) {
+        try (FileReader fr = new FileReader(confFilePath)) {
             configMap = yaml.load(fr);
             LOG.info("\nConfig File : [{}], \nConfig Map : \n{}", confFilePath, configMap);
         } catch (IOException fe) {
