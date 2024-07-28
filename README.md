@@ -7,7 +7,7 @@ Learning Java
 
 ## Getting Started
 
-- Update your `~/m2/settings.xml` file to point to public/walmart repo's
+- Update your `~/m2/settings.xml` file to point to public/wxxx repo's
   - In the `activeProfiles` section, select b/w `external` or `internal` profile
 - [ ] Which archetype to use
 - [ ] Create sample archetype with relevant dependencies
