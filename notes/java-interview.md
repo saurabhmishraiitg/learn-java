@@ -32,7 +32,7 @@
 - **Question** What is the difference between string object and literal? (<http://stackoverflow.com/questions/3297867/difference-between-string-object-and-string-literal>)
 - **Question** What are immutable objects? Give some example of these. What is benefit of using immutable objects?
   - Primitive wrappers (Integer, Long, Short, Double, Float, Character, Byte, Boolean) are also all immutable
-  
+
 - **Question** What is reflection in Java?
 - **Question** What is the significance of volatile keyword in Java?
 - **Question** How to create an immutable object (<http://stackoverflow.com/questions/6305752/how-to-create-immutable-objects-in-java>)
@@ -45,7 +45,7 @@
   - Guarantee on the state of the object results in simpler implementation concerns
   - Thread safety is implied
 - **Question** What is difference between Runnable and Thread approach for Multi Threading (<https://manikandanmv.wordpress.com/tag/extends-thread-vs-implements-runnable/>)
-  - When you extends Thread class, after that you can’t extend any other class which you required. (As you know, Java does not allow inheriting more than one class).
+  - When you extends Thread class, after that you can't extend any other class which you required. (As you know, Java does not allow inheriting more than one class).
   - When you implements Runnable, you can save a space for your class to extend any other class in future or now.
   - When you extends Thread class, each of your thread creates unique object and associate with it.
   - When you implements Runnable, it shares the same object to multiple threads.
@@ -60,8 +60,8 @@
   - Abstract class can have final methods (methods which cannot be overridden)
 
 - **Signed and Unsigned Bit Shifts**
-  - >> is signed right shift of bits i.e. any trailing bit on the left after the shift is filled with the sign bit which is '0' in case of positive integer and '1' in case of negative integer
-  - >>> unsigned right shift of bits i.e. trailing bit are irrespectively filled with '0's
+  - is signed right shift of bits i.e. any trailing bit on the left after the shift is filled with the sign bit which is '0' in case of positive integer and '1' in case of negative integer
+  - unsigned right shift of bits i.e. trailing bit are irrespectively filled with '0's
   - Also not that all shifts will be reset after 31 to start counting from 0 again since the integer space is 32bit large only
   - Whereas for long this reset occurs at 63
 
@@ -111,7 +111,7 @@ A BlockingQueue has 4 different sets of methods for inserting, removing and exam
   interface Result {
     boolean success();
 }
-  
+
   Result objResult = new Result() {
     public boolean success() { return result; }
 };
